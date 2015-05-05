@@ -1,0 +1,31 @@
+
+body{
+	font: 24px 微软雅黑,Arial, Helvetica, sans-serif;
+	background: url(../img/signup.jpg) no-repeat;
+}
+label{
+	font-weight: normal;
+	font-size: 20px;
+}
+#middle-page{
+	background: rgba(91,192,222,.5);
+	width: 400px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 30px;
+	border-radius: 20px;
+}
+#top-bar{
+	margin-bottom: 20px;
+}
+.form-control{
+	margin: 10px auto;
+}
+#submit{
+	margin-top:10px;
+}
+
+
+
+
