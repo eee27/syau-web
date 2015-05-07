@@ -11,24 +11,26 @@
 	<div id="container">
 		<div id="middle-page">
 			<div id="top-bar">
-				<h4><b>注册一个新用户</b></h4>
-				<hr>
+				<div id="right-tem"><h4><b>注册</b></h4>
+				<hr></div>
+				<img src="img/bat.png">
 			</div>
-		<form>
+		<form action="signup.php" method="post">
   		<div class="form-group">
     	<label for="username1">用户名</label>
-    	<input type="text" class="form-control" id="username1" placeholder="输入你的用户名">
+    	<input type="text" class="form-control" id="username1" name="username" placeholder="输入你的用户名">
   		</div>
   		<div class="form-group">
     	<label for="password1">密码</label>
-    	<input type="password" class="form-control" id="password1" placeholder="密码建议数字+字母组合">
-    	<input type="password" class="form-control" id="password2" placeholder="重复一遍密码">
+    	<input type="password" class="form-control" id="password1" name="password1" placeholder="密码建议数字+字母组合">
+    	<input type="password" class="form-control" id="password2" name="password2" placeholder="重复一遍密码">
   		</div>
   		<div class="form-group">
   		<label for="email1">邮箱</label>
-    	<input type="email" class="form-control" id="email1" placeholder="输入你的邮箱">
+    	<input type="email" class="form-control" id="email1" name="email" placeholder="输入你的邮箱">
   		</div>
   		<button type="submit" class="btn btn-default" id="submit">注册!</button>
+  		<span><h6>已有帐号?去<a href="signin.html">登录</a></h6></span>
 		</form>
 		</div>
 	</div>	

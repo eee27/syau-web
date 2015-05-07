@@ -10,17 +10,18 @@
 	<div id="container">
 		<div id="middle-page">
 			<div id="top-bar">
-				<h4><b>登录</b></h4>
-				<hr>
+				<div id="left-tem"><h4><b>登录</b></h4>
+				<hr></div>
+				<img src="img/bat.png">
 			</div>
-		<form>
+		<form action="signin.php" method="post">
   		<div class="form-group">
     	<label for="username1">用户名</label>
-    	<input type="text" class="form-control" id="username1" placeholder="输入你的用户名">
+    	<input type="text" class="form-control" id="username" name="username" placeholder="输入你的用户名">
   		</div>
   		<div class="form-group">
     	<label for="password1">密码</label>
-    	<input type="password" class="form-control" id="password1" placeholder="输入你的密码">
+    	<input type="password" class="form-control" id="password" name="password" placeholder="输入你的密码">
   		</div>
   		<div class="checkbox-lg">
     		<label>
@@ -28,7 +29,11 @@
     		</label>
   		</div>
   		<button type="submit" class="btn btn-default" id="submit">登录</button>
+  		<span><h6><a href="#">忘记密码?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还没有帐号?去<a href="signup.html">注册</a></h6></span>
 		</form>
 		</div>
+		<!--
+			<div id="footer" class="container">&copy;沈农bat-&theta;-<br>发现bug或反馈意见:916321714@qq.com</div>
+		-->
 	</div>
 </body>
