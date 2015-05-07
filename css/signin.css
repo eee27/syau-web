@@ -9,19 +9,19 @@ label{
 }
 hr{
 	width: 60%;
-	margin-right: 0;
+	margin-left: 0;
 }
 h4{
-	text-align: right;
+	text-align: left;
 }
 #middle-page{
-	background: rgba(91,192,222,.6);
+	background: rgba(90,200,90,.6);
 	width: 400px;
-	height: 500px;
+	height: 400px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 100px;
 	padding: 30px;
-	border-radius: 20px;
+	border-radius:40px;
 }
 #top-bar{
 	margin-bottom: 20px;
@@ -29,10 +29,12 @@ h4{
 .form-control{
 	margin: 10px auto;
 }
-#submit{
-	margin-top:10px;
+.form-group{
+	text-align: right;
 }
-
-
-
-
+#submit{
+	margin-top: 10px;
+}
+.checkbox-lg label{
+	font-size: 14px;
+}

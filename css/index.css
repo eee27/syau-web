@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+html {
+	min-width: 980px;
+	min-height: 600px;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-width: 980px;
+	min-height: 600px;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: rgba(220,220,60,.8);
+}
+/*left*/
+.container-fluid {
+	min-width: 980px;
+	min-height: 600px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	/*background: #23527f;*/
+}
+.left-bar {
+	float: left;
+	min-width: 95px;
+	min-height: 540px;
+	width: 10%;
+	height: 90%;
+	position: relative;
+	top: 5%;
+	bottom: 5%;
+	left: 0;
+	background: #262626;
+	border: 1px solid #aaa;
+	border-left: none;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(32,32,32,.5);
+}
+/*center*/
+.main-bar {
+	width: 90%;
+	height: 100%;
+	float: left;
+	/*background: rgba(60,60,60,.3);*/
+}
+.mainbar-guide {
+	position: relative;
+	height: 60px;
+}
+.mainbar-guide>nav {
+	margin-left: 32%;
+}
+.pagination {
+	margin: 0 auto;
+	margin-top: 3%;
+}
+/*app*/
+.mainbar-page {
+	height: 90%;
+	width: 100%;
+	/*background: #eee;*/
+	margin: 0;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+.app-box {
+	height: 90%;
+	width: 80%;
+	/*background: #333;*/
+	position: relative;
+}
+/*673*448*/
+.app-class {
+	width: 25%;
+	height: 18%;
+	float: left;
+	margin-top: 6%;
+	margin-left: 6%;
+	/*background: #fff;*/
+}
+.thumbnail {
+	padding: 0;
+	margin: 0;
+}
+.divis{
+	margin-right: 10px;
+	float: left;
+	text-align: left;
+	line-height: .5;
+}

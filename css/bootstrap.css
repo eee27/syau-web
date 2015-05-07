@@ -4616,6 +4616,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding-left: 0;
   margin: 20px 0;
   border-radius: 4px;
+  box-shadow:  5px 5px 5px rgba(32,32,32,.5);
 }
 .pagination > li {
   display: inline;
@@ -4627,10 +4628,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #337ab7;
+  color: #ddd;
   text-decoration: none;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #444;
+  border: 1px solid #555;
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
@@ -4648,8 +4649,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   color: #23527c;
-  background-color: #eee;
-  border-color: #ddd;
+  background-color: #aaa;
+  border-color: #999;
 }
 .pagination > .active > a,
 .pagination > .active > span,
