@@ -1,17 +1,6 @@
-<html>
-	<body>
-		<h1>your name is
-			<?php
-				echo $_POST["username"];
-
-			?>
-		</h1>
-		<h1>your email is
-			<?php
-				echo $_POST["email"];
-
-			?>
-		</h1>
-
-	</body>	
-</html>
+<?php
+$page_title='look up!';
+$warn_text='your name is '.$_POST['username'].' and <br>your email is '.$_POST['email'];
+include('./includes/header.html');
+include('./includes/footer.html');
+?>
