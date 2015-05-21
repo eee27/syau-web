@@ -21,8 +21,13 @@ $true_pw=$row[2];
 //验证成功
 if($true_pw==$pw){
 //测试 发送cookie
-  setcookie('user_id',$row[0]);
+  /*setcookie('user_id',$row[0]);
   setcookie('user_nm',$row[1]);
+  */
+  session_start();
+  $_SESSION['user_id']=$row[0];
+  $_SESSION['user_nm']=$row[1];
+
 
 
 //引用模板头部
@@ -31,7 +36,7 @@ if($true_pw==$pw){
 }else{
 //引用模板头部
   include('../includes/header.html');
-  echo 'Are you OK? Wrong password!';
+  echo 'Are you OK? Wrong password!'.'<p><a href=../html/signin.html>点此重新登录</a></p>';
 }
 
 exit();
