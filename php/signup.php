@@ -1,5 +1,5 @@
 <?php
-$page_title='reg!';
+$page_title='req-signup';
 /*
 $warn_text='your name is '.$_POST['username'].' and <br>your email is '.$_POST['email'];
 */

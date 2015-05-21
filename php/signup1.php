@@ -1,10 +1,9 @@
 <?php
-$page_title='reg!';
-/*
-$warn_text='your name is '.$_POST['username'].' and <br>your email is '.$_POST['email'];
-*/
+//页面名称赋给模板变量
+$page_title='req-signup';
+//模板头部
 include('../includes/header.html');
-//shoudong
+//表单非空验证,js需再加一次验证
 $error=0;
 
 if(isset($_POST['submit'])){
@@ -46,18 +45,20 @@ if($pw1!==$pw2){
   $pw=$pw1;
 }
 }
-
+//无错
 if($error==0){
+  //引用要求安全性的sql连接文件
   require_once('../../mysql_connect.php');
 
-  $reg_tm=time();
+  $reg_tm=date('y-m-d h:i:s',time());
 
-  $query="INSERT INTO users(user_nm,user_pw,user_em,reg_time) VALUES('$n',SHA('$pw'),'$em','$reg_tm')";
+  $query="INSERT INTO users(user_nm,user_pw,user_em,reg_time) VALUES('$n',MD5('$pw'),'$em','$reg_tm')";
   $result=@mysql_query($query);
   /*mail($em,'thanks for reg!', $pw,'From:syau');*/
   echo 'thanks!your name is '.$n.' and your email is '.$em;
   exit();
   mysql_close();
+  //引用模板尾部
   include('../includes/footer.html');
 }
 }
