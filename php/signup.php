@@ -12,7 +12,6 @@ if(isset($_POST['submit'])){
   $pw=null;
   $em=null;
 //表单非空验证,js需再加一次验证
-function check_empty_form(){
 
 if(empty($_POST['username'])){
   echo 'where your name!<br>';
@@ -41,9 +40,8 @@ if(empty($_POST['email'])){
   }else{
   $em=trim($_POST['email']);
   }
-}//fun check_empty_form
+//fun check_empty_form
 //非空验证完成 下面是相同密码验证
-function same_pw(){
 if($error==0){
 
 if($pw1!==$pw2){
@@ -53,7 +51,7 @@ if($pw1!==$pw2){
   $pw=$pw1;
   }
   }
-}//fuc same_pw
+//fuc same_pw
 //提交的表单没问题
 if($error==0){
 
@@ -61,8 +59,9 @@ if($error==0){
   require_once('../../mysql_connect.php');
 //检测是否重名
   $rename="SELECT user_nm FROM users WHERE user_nm='$nm'";
-  $rename_result=@mysql_query($query);
-  if($rename_result==$nm){
+  $rename_result=@mysql_query($rename);
+  $row = mysql_fetch_row($rename_result);
+  if($row[0]==$nm){
     echo 'Your name belongs to other!You are too late!'.' <p><a href="../html/signup.html">点此重新注册</a></p> ';
   }else{
 //没啥问题 time函数别忘了默认巴黎时区
