@@ -6,12 +6,12 @@ session_start();
 if( (isset($_SESSION['user_id']) ) && (isset($_SESSION['user_nm']) ) ){
 
 //模板头部
-  include('../includes/header.html');
+  include('../includes/header.inc');
 
 echo 'Welcome '.$_SESSION['user_nm'].' !You are number '.$_SESSION['user_id'].' user!' ;
 
 
 //引用模板尾部
-  include('../includes/footer.html');
+  include('../includes/footer.inc');
 }
   ?>

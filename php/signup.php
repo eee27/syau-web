@@ -1,8 +1,8 @@
 <?php
 //页面名称赋给模板变量
-$page_title='req-sigunp';
+$page_title='登录';
 //引用模板头部
-include('../includes/header.html');
+include('../includes/header.inc');
 
 if(isset($_POST['submit'])){
   $error=0;
@@ -74,7 +74,7 @@ if($error==0){
   exit();
   mysql_close();
 //引用模板尾部
-  include('../includes/footer.html');
+  include('../includes/footer.inc');
 
 }//rename_result
 }//error=0

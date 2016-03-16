@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 html {
-	min-width: 1230px;
+	min-width: 1016px;
 	min-height: 600px;
 	height: 100%;
 	width: 100%;
@@ -39,7 +39,7 @@ body {
 }
 #left-nav .nav-stacked a{
 	color: #eee;
-	font-weight: bold;
+	font-size: 16px;
 	text-align: center;
 	right: 8px;
 }

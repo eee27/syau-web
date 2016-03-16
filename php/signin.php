@@ -1,6 +1,6 @@
 <?php
 //页面名称赋给模板变量
-$page_title='req-signin';
+$page_title='注册';
 
 //验证开始
 if( ($_POST['username']!==null)&&($_POST['password']!==null) ){
@@ -31,19 +31,19 @@ if($true_pw==$pw){
 
 
 //引用模板头部
-  include('../includes/header.html');
+  include('../includes/header.inc');
   echo 'OK! Welcome to India!'.'<p><a href=./test.php>点此跳转到测试页</a></p>';
 }else{
 //引用模板头部
-  include('../includes/header.html');
-  echo 'Are you OK? Wrong password!'.'<p><a href=../html/signin.html>点此重新登录</a></p>';
+  include('../includes/header.inc');
+  echo 'Are you OK? Wrong password!'.'<p><a href=../html/signin.inc>点此重新登录</a></p>';
 }
 
 exit();
 mysql_close();
 
 //引用模板尾部
-include('../includes/footer.html');
+include('../includes/footer.inc');
 
 }
 ?>
