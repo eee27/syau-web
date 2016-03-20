@@ -1,0 +1,81 @@
+@charset "utf-8";
+html{
+	width: 100%;
+}
+body{
+	width: 100%;
+	font: 24px 'Microsoft Yahei','微软雅黑',arial,'Hiragino Sans GB','宋体',Tahoma,Arial,Helvetica,STHeiti;
+	background: url(../img/signup.jpg) no-repeat;
+}
+label{
+	font-weight: normal;
+	font-size: 20px;
+}
+hr{
+	width: 100%;
+	margin-left: 0;
+}
+h4{
+	text-align: left;
+}
+form{
+	clear: both;
+}
+form span{
+	margin-left: 20px;
+	margin-top: 24px;
+	float: left;
+}
+button{
+	float: left;
+}
+a{
+	color: #33c;
+}
+img{
+	float: right;
+}
+#container{
+	height: 100%;
+	min-height: 560px;
+	clear: both;
+}
+#middle-page{
+	background: rgb(90,200,90);
+	background: rgba(90,200,90,.8);
+	width: 400px;
+	min-height: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 30px;
+	border-radius:10px;
+	box-shadow: 3px 3px 5px #333;
+}
+#top-bar{
+	height: 10%;
+	margin-bottom: 20px;
+	clear: both;
+}
+.form-control{
+	margin: 10px auto;
+}
+.form-group{
+	text-align: right;
+}
+#submit{
+	margin-top: 10px;
+}
+.checkbox-lg label{
+	font-size: 14px;
+}
+#left-tem{
+	width: 60%;
+	margin-left: 0;
+	float: left;
+}
+#footer{
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+}

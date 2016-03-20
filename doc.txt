@@ -1,0 +1,24 @@
+无cookie默认访问:index.html(介绍页)
+有cookie:对应的app.html
+
+
+访问过程:
+
+介绍 index.html
+->注册 new_user.html->TO new_user.php/* 此后页面均检测并携带cookie */
+->登录 login.html->TO login.php
+->进入主页 app.html
+	->新的消息 :站务通知/* DATABASE:admin_news */
+	->好友动态:推送大表/* DATABASE:news */
+	->个人信息:/* DATABASE:user_info */
+	->好友管理:/* DATABASE:add_friend && friend */
+	->退出登录:销毁session并改变在线状态 /* DATABASE:friend */
+
+
+全部UTF-8编码.登录时若勾选个人电脑则cookie无限期,否则一天.注销时
+
+
+
+
+私密页面:
+作为一个首页app,生成者选择保持时间或访问次数,写表,每次访问时查询.

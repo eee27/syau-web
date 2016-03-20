@@ -14,7 +14,8 @@
 			div {
 				height: 400px;
 				width: 800px;
-				background: rgba(180, 180, 180, .8);
+				background: rgb(255,191, 0);
+				background: rgba(255,191, 0, .9);
 				border-radius: 5px;
 				box-shadow: 3px 3px 5px #333;
 				margin: 100px auto;
