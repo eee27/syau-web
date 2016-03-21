@@ -70,7 +70,7 @@ if($error==0){
   $query="INSERT INTO users(user_nm,user_pw,user_em,reg_time) VALUES('$nm',MD5('$pw'),'$em','$reg_tm')";
   $result=@mysql_query($query);
   /*mail($em,'thanks for reg!', $pw,'From:syau');*/
-  echo 'thanks!your name is '.$nm.' and your email is '.$em.' <p><a href="../html/signin.html">点此进入登录</a></p> ';
+  echo 'thanks!your name is '.$nm.' and your email is '.$em.' <p><a href="../html/login.html">点此进入登录</a></p> ';
   exit();
   mysql_close();
 //引用模板尾部

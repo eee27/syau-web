@@ -6,7 +6,7 @@ user:
 
 users:
 *
-user_id
+user_id/int
 user_nm
 user_pw
 user_em
@@ -16,13 +16,15 @@ user_group;
 
 friend:
 *
+action_id
 user_id
 friend_id
-friend_state;
+friend_state/0离线1在线;
 *
 
 add_friend:
 *
+action_id
 user_id
 add_id
 add_state;
@@ -33,9 +35,7 @@ hash_page:
 page_id
 create_user_id
 page_content
-page_live_time
-visit_user_id
-visit_time;
+page_live_time;
 *
 
 not_user_info:
@@ -50,18 +50,18 @@ last_login;
 user_info:
 *
 user_id
-user_sex
+user_sex/0女1男
 user_age
 user_academy
 user_major
 user_grade
 real_name
-study_id
-sign;
+study_id;
 *
 
 user_app:
 *
+action_id
 user_id
 app_href
 app_intro;
@@ -71,7 +71,7 @@ news:
 *
 news_id
 news_info
-news_group
+news_group/通知 吐槽 问题 讨论
 user_id
 upload_time;
 *
